@@ -25102,17 +25102,17 @@ cr.behaviors.Pin = function(runtime)
 }());
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Audio,
-	cr.plugins_.Button,
 	cr.plugins_.c2canvas,
+	cr.plugins_.Button,
 	cr.plugins_.Browser,
-	cr.plugins_.LocalStorage,
 	cr.plugins_.Keyboard,
 	cr.plugins_.Mouse,
-	cr.plugins_.TextBox,
-	cr.plugins_.Touch,
-	cr.plugins_.TiledBg,
+	cr.plugins_.LocalStorage,
 	cr.plugins_.Sprite,
+	cr.plugins_.TextBox,
+	cr.plugins_.TiledBg,
 	cr.plugins_.Text,
+	cr.plugins_.Touch,
 	cr.behaviors.DragnDrop,
 	cr.behaviors.Pin,
 	cr.behaviors.Flash,
@@ -25172,5 +25172,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.acts.SetWidth,
 	cr.plugins_.Sprite.prototype.exps.Width,
 	cr.plugins_.Text.prototype.acts.SetWidth,
-	cr.plugins_.Text.prototype.exps.Width
+	cr.plugins_.Text.prototype.exps.Width,
+	cr.plugins_.Sprite.prototype.acts.SetOpacity,
+	cr.plugins_.Sprite.prototype.exps.Opacity
 ];};
